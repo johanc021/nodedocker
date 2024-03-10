@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  web:
+    container_name: appnode
+    build: .
+    ports:
+      - "5005:3001"
+    environment:
+      - PORT=3001
+      - NOM_DB=DB
